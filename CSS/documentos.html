@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital de Clínicas - Panel</title>
+  <link rel="stylesheet" href="documentos.css">
+  <script src="./JS/documentos.js" defer></script>
+</head>
+<body>
+
+  <!-- MENÚ HAMBURGUESA DESPLEGABLE -->
+  <nav id="menu-desplegable" class="menu-lateral">
+    <button class="btn-cerrar" onclick="toggleMenu()">✕</button>
+    <ul class="opciones-menu">
+      <li><img src="../Elements/Icons/house-icon.svg" alt=""> Inicio</li>
+      <li class="activo"><img src="../Elements/Icons/folder-icon.svg" alt=""> Documentos</li>
+      <li><img src="../Elements/Icons/location-icon.svg" alt=""> Ambulancias</li>
+      <li><img src="../Elements/Icons/analytics-icon.svg" alt=""> Reportes</li>
+      <li><img src="../Elements/Icons/calendar-icon.svg" alt=""> Calendario</li>
+      <li><img src="../Elements/Icons/survey-icon.svg" alt=""> Encuestas</li>
+      <li><img src="../Elements/Icons/settings-icon.svg" alt=""> Configuración</li>
+    </ul>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="contenedor">
+
+    <!-- BARRA SUPERIOR (HEADER) -->
+    <header class="barra-superior">
+      <button class="btn-hamburguesa" onclick="toggleMenu()">☰</button>
+      
+      <div class="logo-titulo">
+        <img src="../Elements/Icons/hospital-logo.png" alt="Logo Hospital" class="img-logo">
+        <h1>HOSPITAL DE CLINICAS</h1>
+      </div>
+
+      <div class="buscador">
+        <input type="text" placeholder="Escribe algo...">
+        <img src="../Elements/Icons/search-icon.svg" alt="Buscar" class="img-buscar">
+      </div>
+    </header>
+
+    <!-- PANEL INFERIOR -->
+    <div class="panel-principal">
+
+      <!-- TARJETA DE PERFIL (IZQUIERDA) -->
+      <aside class="tarjeta-perfil">
+        <div class="foto-perfil">
+          <img src="../Elements/Icons/pfp-default.png" alt="Usuario">
+        </div>
+        <h2>FUNCIONARIO1</h2>
+        <p class="texto-secundario">1.234.567-0</p>
+        <p class="texto-secundario">CARGO: GESTOR</p>
+        <p class="texto-secundario">31/7/2026</p>
+        
+        <hr class="linea-divisora">
+
+        <button class="btn-accion btn-cargar">
+          <img src="../Elements/Icons/folder-icon.svg" alt="+">
+          <span>CARGAR NUEVO DOCUMENTO</span>
+        </button>
+
+        <button class="btn-accion btn-editar">
+          <img src="../Elements/Icons/folder-icon.svg" alt="Editar">
+          <span>EDITAR DOCUMENTO</span>
+        </button>
+      </aside>
+
+      <!-- SECCIÓN DE CARPETAS (DERECHA) -->
+      <main class="seccion-carpetas">
+        <div class="encabezado-seccion">
+          <span class="indicador-morado"></span>
+          <h2>ÚLTIMOS ABIERTOS</h2>
+        </div>
+
+        <div class="grilla-carpetas">
+          <!-- Carpeta 1 -->
+          <div class="tarjeta-carpeta">
+            <span class="tres-puntos">⋮</span>
+            <img src="../Elements/Icons/folder-icon.svg" alt="Carpeta">
+            <p>31/07/2026</p>
+            <P>DOCUMENTO 1</P>
+          </div>
+          <!-- Carpeta 2 -->
+          <div class="tarjeta-carpeta">
+            <span class="tres-puntos">⋮</span>
+            <img src="../Elements/Icons/folder-icon.svg" alt="Carpeta">
+            <p>31/07/2026</p>
+            <p>DOCUMENTO 2</p>
+          </div>
+          <!-- Carpeta 3 -->
+          <div class="tarjeta-carpeta">
+            <span class="tres-puntos">⋮</span>
+            <img src="../Elements/Icons/folder-icon.svg" alt="Carpeta">
+            <p>31/07/2026</p>
+            <P>DOCUMENTO 3</P>
+          </div>
+          <!-- Carpeta 4 -->
+          <div class="tarjeta-carpeta">
+            <span class="tres-puntos">⋮</span>
+            <img src="../Elements/Icons/folder-icon.svg" alt="Carpeta">
+            <p>31/07/2026</p>
+            <p>DOCUMENTO 4</p>
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT SIMPLE PARA EL MENÚ -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu-desplegable");
+      menu.classList.toggle("abierto");
+    }
+  </script>
+</body>
+</html>

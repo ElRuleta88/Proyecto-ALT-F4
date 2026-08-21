@@ -1,0 +1,262 @@
+/* ESTILOS GENERALES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0b0d19;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* BARRA SUPERIOR */
+.barra-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #12162b;
+  border: 1px solid #232a48;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.btn-hamburguesa {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-titulo h1 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+  background-color: #0b0d19;
+  border: 1px solid #232a48;
+  border-radius: 20px;
+  padding: 5px 15px;
+  width: 300px;
+}
+
+.buscador input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+
+.img-buscar {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+/* PANEL INFERIOR (2 COLUMNAS) */
+.panel-principal {
+  display: flex;
+  gap: 20px;
+}
+
+/* PERFIL (IZQUIERDA) */
+.tarjeta-perfil {
+  background-color: #12162b;
+  border: 1px solid #232a48;
+  border-radius: 20px;
+  width: 280px;
+  padding: 40px 15px;
+  height: 500px;
+  text-align: center;
+
+}
+
+.foto-perfil img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.tarjeta-perfil h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.texto-secundario {
+  color: #8f9bba;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.linea-divisora {
+  border: 0;
+  height: 1px;
+  background: #232a48;
+  margin: 20px 0;
+}
+
+/* BOTONES DEL PERFIL */
+.btn-accion {
+  width: 100%;
+  background-color: #0b0d19;
+  border: 1px solid #232a48;
+  border-radius: 12px;
+  color: white;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 100px;
+}
+
+.btn-accion img {
+  width: 39px;
+  height: 250px;
+}
+
+/* SECCIÓN DERECHA: CARPETAS */
+.seccion-carpetas {
+  flex: 1;
+  background-color: #12162b;
+  border: 1px solid #232a48;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.encabezado-seccion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.indicador-morado {
+  width: 4px;
+  height: 16px;
+  background-color: #8b5cf6;
+  border-radius: 2px;
+}
+
+.encabezado-seccion h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #e2e8f0;
+}
+
+.grilla-carpetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+ 
+}
+
+.tarjeta-carpeta {
+  background-color: #0b0d19;
+  border: 1px solid #232a48;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 200px;
+}
+
+.tres-puntos {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #10b981;
+  cursor: pointer;
+}
+
+.tarjeta-carpeta img {
+  width: 60px;
+  margin: 15px 0 10px 0;
+}
+
+.tarjeta-carpeta p {
+  font-size: 20px;
+  color: #8f9bba;
+}
+
+/* MENÚ DESPLEGABLE */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: -260px; /* Oculto fuera de pantalla */
+  width: 240px;
+  height: 100%;
+  background-color: #1c223f;
+  border-right: 1px solid #232a48;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+
+/* Clase JS para mostrar el menú */
+.menu-lateral.abierto {
+  left: 0;
+}
+
+.btn-cerrar {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.opciones-menu {
+  list-style: none;
+}
+
+.opciones-menu li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  color: #8f9bba;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.opciones-menu li img {
+  width: 18px;
+  height: 18px;
+}
+
+.opciones-menu li.activo, .opciones-menu li:hover {
+  background-color: #1a203d;
+  color: #ffffff;
+}
