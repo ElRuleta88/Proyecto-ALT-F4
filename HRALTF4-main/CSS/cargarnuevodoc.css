@@ -1,0 +1,162 @@
+/* =========================================
+   ESTILOS GENERALES Y BARRA SUPERIOR
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0b0d19;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #12162b;
+  border: 1px solid #232a48;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* AQUÍ ESTÁ LA SOLUCIÓN AL LOGO GIGANTE */
+.img-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-titulo h1 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* =========================================
+   ESTILOS PARA LA PÁGINA DE CARGA
+   ========================================= */
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tarjeta-formulario {
+  background-color: #12162b;
+  border: 1px solid #232a48;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+}
+
+.grupo-input {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-input label {
+  color: #8f9bba;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.input-formulario {
+  background-color: #0b0d19;
+  border: 1px solid #232a48;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-formulario:focus {
+  border-color: #8b5cf6;
+}
+
+/* Área para subir archivos */
+.area-subida {
+  background-color: #0b0d19;
+  border: 2px dashed #232a48;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.area-subida:hover {
+  border-color: #8b5cf6;
+}
+
+.area-subida p {
+  color: #8f9bba;
+  font-size: 14px;
+}
+
+/* Ocultar el input file real para usar el diseño del área */
+.input-archivo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Botones del formulario */
+.botones-formulario {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-cancelar {
+  background: transparent;
+  color: #8f9bba;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-guardar {
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-guardar:hover {
+  background-color: #7c3aed;
+}

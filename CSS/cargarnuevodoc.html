@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargar Documento - Hospital</title>
+  <link rel="stylesheet" href="cargarnuevodoc.css">
+  <script src="cargar.js" defer></script>
+</head>
+<body>
+
+  <div class="contenedor">
+    
+    <!-- BARRA SUPERIOR SIMPLIFICADA -->
+    <header class="barra-superior">
+      <a href="documentos.html" class="btn-volver" style="text-decoration: none; color: white; display: flex; align-items: center; gap: 10px;">
+        <span>←</span> Volver al Panel
+      </a>
+      <div class="logo-titulo">
+        <img src="../Elements/Icons/hospital-logo.png" alt="Logo Hospital" class="img-logo">
+        <h1>CARGAR DOCUMENTO</h1>
+      </div>
+      <div style="width: 100px;"></div> <!-- Espaciador para centrar el título -->
+    </header>
+
+    <!-- FORMULARIO CENTRAL -->
+    <main class="contenedor-formulario">
+      <!-- REEMPLAZA TU ETIQUETA FORM ACTUAL POR ESTA -->
+<form id="formulario-carga" class="tarjeta-formulario" method="POST" action="guardar.php" enctype="multipart/form-data">
+        
+        <div class="encabezado-seccion">
+          <span class="indicador-morado"></span>
+          <h2>DATOS DEL DOCUMENTO</h2>
+        </div>
+
+        <div class="grupo-input">
+          <label for="nombre">Nombre del documento:</label>
+          <input type="text" id="nombre" class="input-formulario" placeholder="Ej. Informe Médico - Paciente A" required>
+        </div>
+
+        <div class="grupo-input">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" class="input-formulario" required>
+        </div>
+
+        <div class="grupo-input">
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" class="input-formulario" required>
+            <option value="">Selecciona una opción...</option>
+            <option value="informe">Informe Médico</option>
+            <option value="estudio">Estudio de Laboratorio</option>
+            <option value="administrativo">Documento Administrativo</option>
+          </select>
+        </div>
+
+        <div class="grupo-input">
+          <label>Archivo adjunto:</label>
+          <div class="area-subida" id="area-subida">
+            <img src="../Elements/Icons/folder-icon.svg" alt="Subir" style="width: 40px; margin-bottom: 10px;">
+            <p id="texto-archivo">Haz clic aquí para seleccionar un archivo PDF, DOCX o JPG</p>
+            <input type="file" id="archivo" class="input-archivo" accept=".pdf, .docx, .jpg, .png" required>
+          </div>
+        </div>
+
+        <hr class="linea-divisora">
+
+        <div class="botones-formulario">
+          <a href="index.html" class="btn-cancelar">Cancelar</a>
+          <button type="submit" class="btn-guardar">Subir Documento</button>
+        </div>
+
+      </form>
+    </main>
+
+  </div>
+</body>
+</html>

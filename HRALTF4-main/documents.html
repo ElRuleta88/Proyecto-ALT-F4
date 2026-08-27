@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital de Clínicas - Documentos</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/documents.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="JS/main.js" defer></script>
+  <script src="JS/documents.js" defer></script>
+</head>
+<body>
+  <div class="page-background"></div>
+  <div class="page-glow"></div>
+
+  <main class="app-shell">
+    <aside class="sidebar">
+      <button type="button" class="sidebar-action" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="sidebar-nav">
+        <div class="nav-indicator"></div>
+
+        <a href="main-menu.html" class="nav-item">
+          <img src="Elements/Icons/house-icon.svg" alt="Inicio">
+          <span>Inicio</span>
+        </a>
+        <a href="documents.html" class="nav-item active">
+          <img src="Elements/Icons/folder-icon.svg" alt="Documentos">
+          <span>Documentos</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/location-icon.svg" alt="Ambulancias">
+          <span>Ambulancias</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/analytics-icon.svg" alt="Reportes">
+          <span>Reportes</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/calendar-icon.svg" alt="Calendario">
+          <span>Calendario</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/survey-icon.svg" alt="Encuestas">
+          <span>Encuestas</span>
+        </a>
+
+        <div class="nav-spacer"></div>
+
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/settings-icon.svg" alt="Configuración">
+          <span>Configuración</span>
+        </a>
+      </nav>
+    </aside>
+
+    <header class="topbar">
+      <div class="brand">
+        <img src="Elements/Icons/hospital-logo.png" alt="Hospital de Clínicas">
+        <span>HOSPITAL DE CLINICAS</span>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="text" class="search-input" placeholder="Buscar documento...">
+        <button type="button" class="topbar-action search-action" aria-label="Buscar">
+          <img src="Elements/Icons/search-icon.svg" alt="" aria-hidden="true">
+        </button>
+      </div>
+    </header>
+
+    <section class="hero-panel documents-panel">
+      <div class="hero-copy">
+        <h1>Documentos</h1>
+        <p>Carga, organiza y gestiona la documentación del hospital de forma segura y centralizada.</p>
+      </div>
+
+      <div class="documents-layout">
+        <aside class="document-surface staff-card">
+          <img class="staff-avatar" src="Elements/Icons/pfp-default.png" alt="Funcionario 1">
+          <h2>FUNCIONARIO1</h2>
+          <p>1.234.567-0</p>
+          <p>CARGO: GESTOR</p>
+          <p>31/7/2026</p>
+
+<div class="staff-divider"></div>
+
+
+<a href="cargarnuevodoc.html" class="staff-action" style="text-decoration: none;">
+  <img src="Elements/Icons/folder-icon.svg" alt="">
+  <span>CARGAR NUEVO DOCUMENTO</span>
+</a>
+
+          <button type="button" class="staff-action">
+            <img src="Elements/Icons/folder-icon.svg" alt="">
+            <span>EDITAR DOCUMENTO</span>
+          </button>
+        </aside>
+
+        <section class="document-surface recent-documents" aria-labelledby="recent-title">
+          <div class="documents-heading">
+            <span></span>
+            <h2 id="recent-title">ÚLTIMOS ABIERTOS</h2>
+          </div>
+
+          <div class="documents-grid">
+            <a href="documents-viewer.html" class="document-link">
+              <article class="document-folder-card">
+                <span class="more-options" aria-hidden="true">⋮</span>
+                <img src="Elements/Icons/folder-icon.svg" alt="">
+                <p class="document-date">31/07/2026</p>
+                <p class="document-name">DOCUMENTO 1</p>
+              </article>
+            </a>
+
+            <a href="documents-viewer.html" class="document-link">
+              <article class="document-folder-card">
+                <span class="more-options" aria-hidden="true">⋮</span>
+                <img src="Elements/Icons/folder-icon.svg" alt="">
+                <p class="document-date">31/07/2026</p>
+                <p class="document-name">DOCUMENTO 2</p>
+              </article>
+            </a>
+
+            <a href="documents-viewer.html" class="document-link">
+              <article class="document-folder-card">
+                <span class="more-options" aria-hidden="true">⋮</span>
+                <img src="Elements/Icons/folder-icon.svg" alt="">
+                <p class="document-date">31/07/2026</p>
+                <p class="document-name">DOCUMENTO 3</p>
+              </article>
+            </a>
+
+            <a href="documents-viewer.html" class="document-link">
+              <article class="document-folder-card">
+                <span class="more-options" aria-hidden="true">⋮</span>
+                <img src="Elements/Icons/folder-icon.svg" alt="">
+                <p class="document-date">31/07/2026</p>
+                <p class="document-name">DOCUMENTO 4</p>
+              </article>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="profile-wrapper">
+    <div class="profile-menu">
+      <button type="button" class="profile-menu-item" aria-label="Configuración">
+        <img src="Elements/Icons/settings-icon.svg" alt="Configuración">
+      </button>
+      <div class="profile-menu-divider"></div>
+      <button type="button" class="profile-menu-item" aria-label="Cerrar sesión">
+        <img src="Elements/Icons/logout-icon.svg" alt="Cerrar sesión">
+      </button>
+    </div>
+
+    <button type="button" class="profile-button" aria-label="Perfil de usuario"></button>
+  </div>
+</body>
+</html>

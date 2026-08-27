@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital de Clínicas</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="./JS/main.js" defer></script>
+</head>
+<body>
+  <div class="page-background"></div>
+  <div class="page-glow"></div>
+
+  <main class="app-shell">
+    
+    <!-- SIDEBAR COMPONENT -->
+    <aside class="sidebar">
+      <button type="button" class="sidebar-action" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="sidebar-nav">
+        <!-- Bouncy iOS pill indicator -->
+        <div class="nav-indicator"></div> 
+
+        <a href="main-menu.html" class="nav-item active">
+          <img src="Elements/Icons/house-icon.svg" alt="Inicio">
+          <span>Inicio</span>
+        </a>
+        <a href="documents.html" class="nav-item">
+          <img src="Elements/Icons/folder-icon.svg" alt="Documentos">
+          <span>Documentos</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/location-icon.svg" alt="Ambulancias">
+          <span>Ambulancias</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/analytics-icon.svg" alt="Reportes">
+          <span>Reportes</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/calendar-icon.svg" alt="Calendario">
+          <span>Calendario</span>
+        </a>
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/survey-icon.svg" alt="Encuestas">
+          <span>Encuestas</span>
+        </a>
+        
+        <div class="nav-spacer"></div>
+
+        <a href="#" class="nav-item">
+          <img src="Elements/Icons/settings-icon.svg" alt="Configuración">
+          <span>Configuración</span>
+        </a>
+      </nav>
+    </aside>
+
+    <header class="topbar">
+      <div class="brand">
+        <img src="Elements/Icons/hospital-logo.png" alt="Hospital de Clínicas">
+        <span>HOSPITAL DE CLINICAS</span>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="text" class="search-input" placeholder="Escribe algo...">
+        <button type="button" class="topbar-action search-action" aria-label="Buscar">
+          <img src="Elements/Icons/search-icon.svg" alt="" aria-hidden="true">
+        </button>
+      </div>
+    </header>
+
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <h1>¡Bienvenido Usuario!</h1>
+        <p>Gestiona documentos y traslados de manera rapida, segura y eficiente.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="feature-card">
+          <div class="feature-icon">
+            <img src="Elements/Icons/folder-icon.svg" alt="Icono de carpeta">
+          </div>
+
+          <div>
+            <h2>Carga y Gestión de Documentos</h2>
+            <p>Carga, organiza y gestiona toda la documentacion del hospital de forma segura y centralizada</p>
+          </div>
+
+          <a href="documents.html" class="card-button" aria-label="Ir a carga y gestión de documentos"></a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">
+            <img src="Elements/Icons/location-icon.svg" alt="Icono de ubicación">
+          </div>
+
+          <div>
+            <h2>Trazabilidad de Ambulancias</h2>
+            <p>Seguimiento en tiempo real de ambulancias y traslados para una mejor coordinación y atención</p>
+          </div>
+
+          <button type="button" class="card-button" aria-label="Ir a trazabilidad de ambulancias"></button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="profile-wrapper">
+    <div class="profile-menu">
+      <button type="button" class="profile-menu-item" aria-label="Configuración">
+        <img src="Elements/Icons/settings-icon.svg" alt="Configuración">
+      </button>
+      <div class="profile-menu-divider"></div>
+      <button type="button" class="profile-menu-item" aria-label="Cerrar sesión">
+        <img src="Elements/Icons/logout-icon.svg" alt="Cerrar sesión">
+      </button>
+    </div>
+
+    <button type="button" class="profile-button" aria-label="Perfil de usuario"></button>
+  </div>
+</body>
+</html>
