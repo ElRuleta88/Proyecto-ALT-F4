@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="JS/main.js" defer></script>
-  <script src="JS/documents.js" defer></script>
+  <script src="./JS/documents.js" defer></script>
 </head>
 <body>
   <div class="page-background"></div>
@@ -93,16 +93,18 @@
 <div class="staff-divider"></div>
 
 
-<a href="cargarnuevodoc.html" class="staff-action" style="text-decoration: none;">
+
+<a href="./cargarnuevodoc.html" class="staff-action" style="text-decoration: none;">
   <img src="Elements/Icons/folder-icon.svg" alt="">
   <span>CARGAR NUEVO DOCUMENTO</span>
 </a>
 
-          <button type="button" class="staff-action">
-            <img src="Elements/Icons/folder-icon.svg" alt="">
-            <span>EDITAR DOCUMENTO</span>
-          </button>
-        </aside>
+
+<a href="./editardocumentos.html" class="staff-action" style="text-decoration: none;">
+  <img src="Elements/Icons/folder-icon.svg" alt="">
+  <span>EDITAR DOCUMENTO</span>
+</a>
+</aside>
 
         <section class="document-surface recent-documents" aria-labelledby="recent-title">
           <div class="documents-heading">
@@ -152,18 +154,26 @@
     </section>
   </main>
 
-  <div class="profile-wrapper">
-    <div class="profile-menu">
-      <button type="button" class="profile-menu-item" aria-label="Configuración">
-        <img src="Elements/Icons/settings-icon.svg" alt="Configuración">
-      </button>
-      <div class="profile-menu-divider"></div>
-      <button type="button" class="profile-menu-item" aria-label="Cerrar sesión">
-        <img src="Elements/Icons/logout-icon.svg" alt="Cerrar sesión">
-      </button>
-    </div>
+ <div class="profile-wrapper" id="contenedor-perfil">
+  <div class="profile-menu">
+    
+    <!-- Enlace a Configuración (puedes crear un configuracion.html o .php en el futuro) -->
+    <a href="./config_user_docs.html" class="profile-menu-item" aria-label="Configuración" style="text-decoration: none;">
+      <img src="Elements/Icons/settings-icon.svg" alt="Configuración">
+    </a>
+    
+    <div class="profile-menu-divider"></div>
+    
+    <!-- Enlace a tu script de Cerrar Sesión -->
+    <a href="./register.html" class="profile-menu-item" aria-label="Cerrar sesión" style="text-decoration: none;">
+      <img src="Elements/Icons/logout-icon.svg" alt="Cerrar sesión">
+    </a>
+    
+  </div>
 
-    <button type="button" class="profile-button" aria-label="Perfil de usuario"></button>
+  <!-- Le agregamos el evento onclick para que active la magia de JavaScript -->
+  <button type="button" class="profile-button" aria-label="Perfil de usuario" onclick="toggleMenu()"></button>
+</div>
   </div>
 </body>
 </html>

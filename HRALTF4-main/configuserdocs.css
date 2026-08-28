@@ -1,0 +1,54 @@
+/* =========================================================
+   PÁGINA DE CONFIGURACIÓN
+   ========================================================= */
+
+.contenedor-configuracion {
+    position: relative;
+    z-index: 10;
+    padding: 40px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-configuracion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.titulo-configuracion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-configuracion img {
+    width: 50px;
+}
+
+.titulo-configuracion h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #eeeeee;
+    letter-spacing: 0.02em;
+}
+
+.opcion-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.opcion-toggle input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.opcion-toggle label {
+    margin: 0;
+    cursor: pointer;
+}

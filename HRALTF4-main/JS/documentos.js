@@ -49,3 +49,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 });
+
+function toggleMenu() {
+    // Buscamos el contenedor del perfil
+    const perfil = document.getElementById('contenedor-perfil');
+    
+    // El comando toggle pone la clase si no está, y la quita si ya está
+    perfil.classList.toggle('profile-active');
+}

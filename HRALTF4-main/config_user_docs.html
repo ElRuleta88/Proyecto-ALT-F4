@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuración - Hospital de Clínicas</title>
+  <!-- Usamos el CSS principal y el de tus formularios para mantener el diseño -->
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="./config_user_docs.html">
+</head>
+<body>
+  <!-- Fondo global del sistema -->
+  <div class="page-background"></div>
+  <div class="page-glow"></div>
+
+  <div class="contenedor" style="position: relative; z-index: 10; padding: 40px;">
+    
+    <!-- BARRA SUPERIOR -->
+    <header class="barra-superior" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;">
+      <a href="documents.html" class="btn-cancelar" style="text-decoration: none; color: white;">
+        <span>←</span> Volver al Panel
+      </a>
+      <div class="logo-titulo" style="display: flex; align-items: center; gap: 15px;">
+        <img src="Elements/Icons/hospital-logo.png" alt="Logo Hospital" style="width: 50px;">
+        <h1 style="margin: 0; font-size: 1.8rem; color: #eeeeee;">CONFIGURACIÓN DEL SISTEMA</h1>
+      </div>
+      <div style="width: 120px;"></div> <!-- Espaciador para centrar el título -->
+    </header>
+
+    <!-- TARJETA CENTRAL DE CONFIGURACIÓN -->
+    <main class="contenedor-formulario">
+      <div class="tarjeta-formulario">
+        
+        <div class="encabezado-seccion">
+          <span class="indicador-morado"></span>
+          <h2>AJUSTES DE LA CUENTA</h2>
+        </div>
+
+        <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+          
+          <div class="grupo-input">
+            <label for="email">Correo Electrónico de Notificaciones:</label>
+            <input type="email" id="email" name="email" class="input-formulario" value="funcionario1@hospital.com">
+          </div>
+
+          <div class="grupo-input">
+            <label for="password">Cambiar Contraseña:</label>
+            <input type="password" id="password" name="password" class="input-formulario" placeholder="Escribe una nueva contraseña si deseas cambiarla">
+          </div>
+
+          <div class="grupo-input" style="flex-direction: row; align-items: center; gap: 10px;">
+            <input type="checkbox" id="alertas" name="alertas" checked style="width: 20px; height: 20px;">
+            <label for="alertas" style="margin: 0;">Recibir alertas de nuevos documentos cargados</label>
+          </div>
+
+          <hr class="linea-divisora">
+
+          <div class="botones-formulario">
+            <a href="documents.html" class="btn-cancelar">Cancelar</a>
+            <button type="submit" class="btn-guardar">Guardar Ajustes</button>
+          </div>
+          
+        </form>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
